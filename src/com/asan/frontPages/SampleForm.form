@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.asan.frontPages.SampleForm">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:37px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:29px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:36px:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:29px:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:155px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:123px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:100px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:150px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:63px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:86px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:127px:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:72dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="995" height="437"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="8f219">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="15" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c892" class="javax.swing.JTable" binding="serversTable" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="ebd98">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="15" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="dfd83" class="javax.swing.JTable" binding="clientTable">
+            <constraints/>
+            <properties>
+              <toolTipText value="جدول کلاینتها"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="2aa6e">
+        <constraints>
+          <grid row="12" column="2" row-span="9" col-span="6" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b021c" class="javax.swing.JTable" binding="niiTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="ced52" class="javax.swing.JButton" binding="stopListenbutton">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="گوش نکردن"/>
+        </properties>
+      </component>
+      <component id="4f6a" class="javax.swing.JButton" binding="viewServerButton">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="تنظیمات"/>
+        </properties>
+      </component>
+      <component id="35e33" class="javax.swing.JButton" binding="serverConfigurations">
+        <constraints>
+          <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="تنظیمات "/>
+        </properties>
+      </component>
+      <component id="121de" class="javax.swing.JButton" binding="resetClientCounterbutton">
+        <constraints>
+          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="ریست شمارنده کلاینت"/>
+        </properties>
+      </component>
+      <component id="18b40" class="javax.swing.JButton" binding="startListenbutton">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="گوش کردن"/>
+        </properties>
+      </component>
+      <component id="7e2f" class="javax.swing.JButton" binding="restartServerSocketbutton">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="ریست سوکت سرور"/>
+        </properties>
+      </component>
+      <component id="c691c" class="javax.swing.JButton" binding="addServer">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="اضافه کردن سرور"/>
+        </properties>
+      </component>
+      <component id="99d67" class="javax.swing.JButton" binding="addNII">
+        <constraints>
+          <grid row="22" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="اضافه کردن Nii"/>
+        </properties>
+      </component>
+      <component id="be949" class="javax.swing.JButton" binding="removeNii">
+        <constraints>
+          <grid row="22" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="حذف Nii"/>
+        </properties>
+      </component>
+      <component id="ded4e" class="javax.swing.JButton" binding="deleteServerButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="حذف سرور"/>
+        </properties>
+      </component>
+      <component id="8cbe0" class="javax.swing.JLabel" binding="connectedServerCount">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="9" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="5ef3" class="javax.swing.JButton" binding="resetCounterbutton">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="ریست شمارنده Manager"/>
+        </properties>
+      </component>
+      <component id="fe962" class="javax.swing.JCheckBox" binding="clientRecieveDataCheck">
+        <constraints>
+          <grid row="12" column="10" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=" لاگ دریافت اطلاعات کلاینت"/>
+        </properties>
+      </component>
+      <component id="169a1" class="javax.swing.JCheckBox" binding="serverRecieveLogCheck">
+        <constraints>
+          <grid row="16" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ دریافت سرور"/>
+        </properties>
+      </component>
+      <component id="bf273" class="javax.swing.JCheckBox" binding="clientConnectLogCheck">
+        <constraints>
+          <grid row="12" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ اتصال کلاینت"/>
+        </properties>
+      </component>
+      <component id="63481" class="javax.swing.JCheckBox" binding="clientSendLogCheck">
+        <constraints>
+          <grid row="16" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ ارسال کلاینت"/>
+        </properties>
+      </component>
+      <component id="c0788" class="javax.swing.JCheckBox" binding="sendDataLogCheck">
+        <constraints>
+          <grid row="14" column="10" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ ارسال اطلاعات کلاینت"/>
+        </properties>
+      </component>
+      <component id="263f1" class="javax.swing.JCheckBox" binding="sendErrorLogCheck">
+        <constraints>
+          <grid row="16" column="10" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ خطای ارسال کلاینت"/>
+        </properties>
+      </component>
+      <component id="b2873" class="javax.swing.JCheckBox" binding="clientRecieveLogCheck">
+        <constraints>
+          <grid row="14" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=" لاگ دریافت کلاینت"/>
+        </properties>
+      </component>
+      <component id="3d3e7" class="javax.swing.JCheckBox" binding="serverSendLogCheck">
+        <constraints>
+          <grid row="14" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ ارسال سرور"/>
+        </properties>
+      </component>
+      <component id="6f484" class="javax.swing.JCheckBox" binding="clientDisconnectLogCheck">
+        <constraints>
+          <grid row="12" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="لاگ قطع ارتباط کلاینت"/>
+        </properties>
+      </component>
+      <component id="7786" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="24" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9e69e" class="javax.swing.JLabel" binding="currentConnectionCount">
+        <constraints>
+          <grid row="10" column="12" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="4bb8a" class="javax.swing.JLabel" binding="sendPacketCount">
+        <constraints>
+          <grid row="10" column="8" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="d2f79" class="javax.swing.JLabel" binding="recievedPacketCount">
+        <constraints>
+          <grid row="10" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="20f14" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7a8c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9d018" class="javax.swing.JButton" binding="DisableAllLogs">
+        <constraints>
+          <grid row="18" column="10" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="غیر فعال کردن همه لاگها"/>
+        </properties>
+      </component>
+      <component id="fda45" class="javax.swing.JButton" binding="enableAllLogs">
+        <constraints>
+          <grid row="18" column="14" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="فعال کردن همه لاگها"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
