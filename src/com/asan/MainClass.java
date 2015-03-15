@@ -1,7 +1,7 @@
 package com.asan;
 
-import com.asan.frontPages.LoginForm;
-import com.asan.frontPages.SampleForm;
+import com.asan.frontPages.generalForms.LoginForm;
+import com.asan.frontPages.generalForms.StartForm;
 import com.asan.JMXClasses.*;
 import com.asan.NamesPkg.*;
 
@@ -29,11 +29,13 @@ public class MainClass {
 
     public static void main(String[] args) {
         try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+
             LoginForm loginForm = new LoginForm();
+            loginForm.setLocationRelativeTo(null);
             String[] address = loginForm.showDialog();
 
             //UIManager.setLookAndFeel(UIManager.getInstalledLookAndFeels()[3].getClassName());
-            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
             String host = address[0];
             int port = Integer.parseInt(address[1]);
             String url = "service:jmx:rmi:///jndi/rmi://" + host + ":" + port + "/jmxrmi";
@@ -44,11 +46,12 @@ public class MainClass {
 
             JFrame frame = new JFrame("سامانه نظارت");
 
-            frame.setContentPane(new SampleForm().panel1);
+            frame.setContentPane(new StartForm().panel1);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setMaximumSize(new Dimension(1000,550));
-            frame.setMinimumSize(new Dimension(1000,550));
+            frame.setMaximumSize(new Dimension(1020, 550));
+            frame.setMinimumSize(new Dimension(1020, 550));
             frame.setResizable(false);
+            frame.setLocationRelativeTo(null);
 //            frame.pack();
             frame.setVisible(true);
             frame.setVisible(true);
